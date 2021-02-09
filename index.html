@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+    <script type="text/javascript">
+// Supresses error(dialogs) but logs them instead. Workaround for some Unity WebGL related issues.
+window.onerror = function(message, url, lineNumber) {
+console.log("Message: " + message + ". URL: " + url + ". LineNumber: " + lineNumber);
+return true;
+};
+</script>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Asteroid</title>
